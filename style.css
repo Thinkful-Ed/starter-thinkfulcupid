@@ -6,9 +6,9 @@ body {
 }
 
 h2 {
-  font-size: 26px;
-  font-weight: 400;
-  margin: 0 10px 15px 10px;
+  font-size: 42px;
+  font-weight: strong;
+  margin: 40px 10px 15px 10px;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -40,11 +40,13 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin: 30px;
+  justify-content: center;
 }
 
 .item-double {
@@ -55,7 +57,7 @@ main img {
 
 header {
   background-color: #83092e;
-  padding: 20px 20px 0 20px;
+  padding: 30px 20px 10px 20px;
   text-align: center;
 }
 
@@ -65,14 +67,37 @@ header {
   color: #ecdbc9;
 }
 
+/* newly added */
+/*nav {
+  display: flex;
+  flex-direction: row;
+}*/
+/* newly added */
+
+/* newly added */
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+}
+/* newly added */
+
 header nav ul li {
   list-style-type: none;
+  font-size: 28px;
+}
+
+header nav ul li:last-child {
+  padding-right: 20px;
+
 }
 
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  padding: 0 0 0 20px;
+  margin: 10px;
 }
 
 header nav ul li a:hover {
@@ -118,3 +143,31 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+/*Desktop*/
+@media all and (min-width: 769px) {
+  .logo {
+    font-size: 48px;
+  }
+  body {
+    color: rgb(14, 14, 148);
+  }
+}
+
+/*mobile devices (large)*/
+@media all and (max-width: 768px) and (min-width:600px) {
+  .logo {
+    font-size: 128px;
+  }
+} /*Font size, etc. no longer looked good below 600px*/
+
+/*mobile devices (small)*/ 
+@media all and (max-width: 599px) and (min-width: 320px) { 
+
+} /*google said that 320px was the smallest smartphone you could reasonably 
+expect to design for*/
+
+/*smart watches I guess?*/
+@media all and (max-width: 320px) {
+
+} 
