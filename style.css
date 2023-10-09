@@ -8,7 +8,7 @@ body {
 h2 {
   font-size: 42px;
   font-weight: strong;
-  margin: 40px 10px 15px 10px;
+  margin: 20px 10px 25px 10px;
   text-align: center;
 }
 
@@ -20,6 +20,9 @@ h3 {
 p {
   line-height: 1.5em;
   margin: 0;
+  font-size: 28px;
+  padding: 0 25px 25px 25px;
+  font-weight: 500;
 }
 
 section {
@@ -32,7 +35,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -41,7 +44,7 @@ main img {
   display: flex;
   flex: 1;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
   margin: 30px;
 }
 
@@ -53,7 +56,11 @@ main img {
 }
 
 .item {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .item-double {
@@ -129,15 +136,15 @@ form {
 
 form label {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
 }
 
 form select,
 form input {
-  margin-bottom: 20px;
-  width: 180px;
-  font-size: 24px;
+  margin-bottom: 40px;
+  width: 300px;
+  font-size: 28px;
   float: right;
 }
 
@@ -145,8 +152,8 @@ form button {
   background-color: #83092e;
   border: none;
   color: #fff;
-  font-size: 24px;
-  padding: 15px;
+  font-size: 42px;
+  padding: 20px;
   width: 100%;
 }
 
