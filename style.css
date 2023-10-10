@@ -66,6 +66,10 @@ main img {
   flex: 2;
 }
 
+.item-space {
+  align-content: space-between;
+}
+
 /*
 .container {
   display: flex;
@@ -213,8 +217,8 @@ footer p {
     display: flex;
     flex-direction: row;
     text-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 10px;
   }
 
   header {
@@ -243,9 +247,9 @@ footer p {
   form button {font-size: 32px;}
 
 
-  body {
+  /*body {
     color: rgb(14, 14, 148);
-  }
+  }*/
 }
 
 /*mobile devices (large)*/
@@ -253,28 +257,25 @@ footer p {
   .logo {
     font-size: 128px;
   }
-
-  body {
-    color: rgb(202, 110, 5);
-  }
-} /*Font size, etc. no longer looked good below 600px*/
+} /*Font size, etc. no longer looked good below 550px*/
 
 /*mobile devices (small)*/
 
-@media all and (max-width: 599px) /*and (min-width= 321px)*/ { 
-  h2 {font-size: 32px;}
-  h3 {font-size: 22px;}
-  p {font-size: 20px;}
-  ul li {font-size: 20px;}
-  header nav ul li {font-size: 21px;}
-  form label {font-size: 21px;}
-  form select, form input {font-size: 21px; width: 200px;}
-  form button {font-size: 32px;}
-  body {
+@media all and (max-width: 550px) { 
+  .logo {font-size: 48px;}
+  h2 {font-size: 21px;}
+  h3 {font-size: 15px;}
+  p {font-size: 13px;}
+  ul li {font-size: 13px;}
+  header nav ul li {font-size: 14px;}
+  form label {font-size: 14px;}
+  form select, form input {font-size: 14px; width: 150px; margin-bottom: 10px;}
+  form button {font-size: 21px;}
+ /* body {
     color: rgb(3, 112, 45);
     margin: 5px;
     padding: 0px;
-  }
+  }*/
 }
 
  /*google said that 320px was the smallest smartphone you could reasonably 
